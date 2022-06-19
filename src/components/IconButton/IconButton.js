@@ -6,7 +6,7 @@ import VisuallyHidden from "../VisuallyHidden";
 
 const IconButton = ({ id, color, label, size, strokeWidth, ...delegated }) => {
   return (
-    <UnstyledButton>
+    <UnstyledButton {...delegated}>
       <Icon id={id} strokeWidth={strokeWidth} size={size} color={color} />
       <VisuallyHidden>{label}</VisuallyHidden>
     </UnstyledButton>
